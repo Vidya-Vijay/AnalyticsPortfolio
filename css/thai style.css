@@ -1,0 +1,121 @@
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Body styling with Thai-themed colors */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #5c0e0e; 
+  color: #f8f1e5;            /* ivory */
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* Main container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Header with warm tone */
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(to bottom, #3b1f1f, #2e0f0f);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #d4af37; /* rich gold */
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #f3e5ab;
+}
+
+/* Section titles */
+h2 {
+  color: #ffa726; /* turmeric orange */
+  font-size: 1.6rem;
+  border-left: 4px solid #ffa726;
+  padding-left: 1rem;
+  margin: 2.5rem 0 1rem;
+}
+
+/* Subheadings (figures) */
+h3 {
+  color: #f8f1e5;
+  font-size: 1.2rem;
+  margin-top: 1.8rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.05rem;
+  color: #f8f1e5;
+  margin: 1rem 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 90%;
+  border-radius: 8px;
+  border: 1px solid #cc9966;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Back button */
+.btn-back {
+  display: inline-block;
+  margin: 3rem auto 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #d4af37;
+  color: #2e0f0f;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+.btn-back:hover {
+  background: #b8860b;
+  transform: translateY(-1px);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
