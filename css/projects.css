@@ -33,6 +33,13 @@ h2 {
 .project h3 {
   margin-top: 0;
   color: #c8a2ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project h3:hover {
+  text-decoration: underline; 
+  color: #9b6fff;              
 }
 
 .project img {
