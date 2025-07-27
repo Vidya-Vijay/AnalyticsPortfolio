@@ -17,9 +17,9 @@ h2 {
 
 #projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
   gap: 1.5rem; /* space between columns and rows */
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .project {
