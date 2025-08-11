@@ -57,7 +57,7 @@ h2 {
 
 .project p {
   margin: 0.4rem 0;
-  color: #ccc;
+  color: #0c0c0c;
 }
 
 .tools {
@@ -113,4 +113,5 @@ h2 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
