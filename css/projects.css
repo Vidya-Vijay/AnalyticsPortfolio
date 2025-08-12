@@ -32,7 +32,8 @@ h2 {
 
 .project h3 {
   margin-top: 0;
-  color: #c8a2ff;
+  color: #250451;
+;
   text-decoration: none;
   cursor: pointer;
 }
@@ -113,5 +114,6 @@ h2 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 
