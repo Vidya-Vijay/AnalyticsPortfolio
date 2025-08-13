@@ -1,7 +1,5 @@
 html {
-  scroll-padding-top: 130px; 
-}
-
+  scroll-padding-top: 130px; }
 
 * { box-sizing: border-box; }
 
@@ -9,15 +7,15 @@ body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
   line-height: 1.6;
-  background: #121212;
-  color: #ddd6f3;
-}
+  background: #120028;
+  color: #ffffff;
+  }
 
 header {
   position: relative;
   background:
     linear-gradient(rgba(26, 13, 52, 0.7), rgba(26, 13, 52, 0.7)),
-    url('../images/data driven.png') no-repeat center center/cover;
+    url("../images/data driven.png") no-repeat center center/cover;
   color: #ddd6f3;
   padding: 4rem 1rem;
   text-align: center;
@@ -26,7 +24,7 @@ header {
 }
 
 header h1, header p {
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
 
 h1, h2, h3 {
@@ -35,11 +33,14 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
-
 h3 {
   font-size: 1.3rem;
 }
 
+h3 {
+  color: #e2d9ff; 
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
 
 nav {
   background: #1e1e1e;
@@ -78,13 +79,106 @@ footer {
   color: #777;
 }
 
-@media (max-width: 600px) {
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Left Column: About Text */
+.about-text {
+  flex: 1 1 400px;
+}
+
+/* Right Column: Skills */
+.skills-section {
+  flex: 1 1 400px;
+}
+
+/* Skills Grid */
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Skill Cards */
+.skill-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icon {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.icon svg {
+  width: 35px;
+  height: 35px;
+  fill: #4F46E5;
+}
+
+.skill-text h4 {
+  margin: 0 0 5px 0;
+  color: #0a0c11;
+}
+
+.skill-text p {
+  margin: 0;
+  line-height: 1.4;
+  color: #0a0c11;
+}
+
+/* Responsive: Stack columns on mobile */
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+.education {
+  margin: 0;          
+  line-height: 0.05 
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 500px) {
   nav {
     flex-direction: column;
     gap: 0.75rem;
   }
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-}
 
+   header p {
+    font-size: 1.5rem;
+  }
+
+ 
+}
